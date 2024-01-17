@@ -1,73 +1,73 @@
 import doctest
 
 
-class Дерево:
-    def __init__(self, вид: str, высота: float):
+class Wood:
+    def __init__(self, type: str, height: float):
         """
         Создание и подготовка к работе объекта "Дерево"
 
-        :param вид: Вид дерева
-        :param высота: Высота дерева в метрах
+        :param type: Вид дерева
+        :param height: Высота дерева в метрах
 
         Примеры:
-        >>> tree = Дерево('Дуб', 10.5)  # инициализация экземпляра класса
+        >>> tree = Wood('Дуб', 10.5)  # инициализация экземпляра класса
         """
         ...
 
     # Рост дерева
-    def расти(self, годы: int) -> None:
+    def growth(self, age: int) -> None:
         ...
 
     # Падение листьев
-    def опадение_листьев(self) -> None:
+    def leaf_drop(self) -> None:
         ...
 
 
-class Металл:
-    def __init__(self, тип_металла: str, вес: float):
+class Metal:
+    def __init__(self, typeofmetal: str, weight: float):
         """
         Создание и подготовка к работе объекта "Металл"
 
-        :param тип_металла: Тип металла.
-        :param вес: Вес металлического объекта в килограммах.
+        :param typeofmetal: Тип металла
+        :param weight: Вес металлического объекта в килограммах
 
         Примеры:
-        >>> metal_object = Металл('Железо', 50.2)  # инициализация экземпляра класса
+        >>> metal_object = Metal('Железо', 50.2)  # инициализация экземпляра класса
         """
         ...
 
     # Плавление металла
-    def плавление(self, температура: float) -> None:
+    def melting(self, temperature: float) -> None:
         ...
 
     # Создание формы
-    def формовка(self, форма: str) -> None:
+    def forming(self, form: str) -> None:
         ...
 
     # Теплопроводность
-    def проводить_тепло(self, разница_температур: float) -> float:
+    def conducting_heat(self, difference_of_temperatures: float) -> float:
         ...
 
 
-class Бетон:
-    def __init__(self, класс_прочности: str, объем: float):
+class Concrete:
+    def __init__(self, strengh_class: str, volume: float):
         """
         Создание и подготовка к работе объекта "Бетон"
 
-        :param класс_прочности: Класс прочности бетона.
-        :param объем: Объем бетона в кубических метрах.
+        :param strengh_class: Класс прочности бетона
+        :param volume: Объем бетона в кубических метрах
 
         Примеры:
-        >>> concrete = Бетон('B25', 30.0)  # инициализация экземпляра класса
+        >>> concrete = Concrete('B25', 30.0)  # инициализация экземпляра класса
         """
         ...
 
     # Процесс отвердения бетона
-    def застывать(self, время_отверждения: int) -> None:
+    def curing(self, time_of_curing: int) -> None:
         ...
 
     # Разрушение бетона
-    def разрушаться(self, сила: float) -> bool:
+    def destruction(self, pressure: float) -> bool:
         ...
 
 
